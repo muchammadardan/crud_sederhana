@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>on demo</title>
+    <style>
+      p {
+        color: red;
+        margin: 5px;
+        cursor: pointer;
+      }
+      p:hover {
+        background: yellow;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  </head>
+  <body onload="triggerBtnClick()">
+    <div class="container py-3">
+      <!-- BODY HERE -->
+      <button id="btn" onclick="alert('oi')"btn-success">Hapus</button>
+    </div>
+
+    <script>
+      function triggerBtnClick() {
+        document.getElementById("btn").click();
+      }
+    </script>
+  </body>
+</html>
